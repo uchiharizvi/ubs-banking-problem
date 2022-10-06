@@ -25,6 +25,8 @@ public class Bank implements BankInterface {
 
 	public Long openConsumerAccount(Person person, int pin, double startingDeposit) {
 		// complete the function
+
+		ConsumerAccount consumerAccount = new ConsumerAccount(person,,pin,startingDeposit);
         return -1L;
 	}
 
@@ -44,6 +46,7 @@ public class Bank implements BankInterface {
 
 	public boolean debit(Long accountNumber, double amount) {
 		// complete the function
+		Transaction transaction = new Transaction(accountNumber)
         return true;
 	}
 }
